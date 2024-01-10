@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Readify - Online Book Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-left">
+                <div class="overlay-content">
+                    <h3 style="margin-bottom: -20px;">Returning customer?</h3>
+                    <h1 style="margin-bottom: 5px;">Login to Your Account</h1>
+                    <form id="login-form">
+                        <input type="email" id="email" name="email" class="overlay-input" placeholder="Email">
+                        <input type="password" id="password" name="password" class="overlay-input" placeholder="Password">
+                        <button type="submit" class="overlay-button" id="login-button" style="margin-top: 10px; font-size: 1.2em; width: 45%;">
+                            Sign In
+                        </button>                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="overlay-right">
+                <div class="overlay-content">
+                    <h1 style="margin-bottom: -10px;">New Here?</h1>
+                    <h3>Sign up to become a customer today!</h3>
+                    <button class="overlay-button" id="pill-button" style="font-size: 1.2em;" onclick="location.href='register.html';">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Readify</h1>
+        <div>
+        </div>
+        <div id="sign-out">
+            <a href="#" id="account-button" style="padding: 1px 10px;">
+                <img src="../images/menu.png" alt="User Icon" style="width: 30px; height: 30px;">
+            </a>
+            <a href="#" id="account-button" style="padding: 1px 10px;">
+                <img src="../images/shopping-cart.png" alt="User Icon" style="width: 30px; height: 30px;">
+            </a>
+            <a href="#" id="account-button" style="padding: 1px 10px;">
+                <img src="../images/user.png" alt="User Icon" style="width: 30px; height: 30px;">
+            </a>
+            <a href="#" id="pill-button" style="margin-left: 20px;">Sign Out</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="browse">
+            <div id="browse-container">
+                <a href="#" id="pill-button">
+                    <img class="magnifying-glass" src="../images/magnifying-glass.png" alt="Magnifying Glass"> Browse Catalog
+                </a>
+                <h2>Or see our bestsellers below</h2>
+            </div>
+        </section>
+
+        <div id="product-grid">
+            <a href="#" class="product-cell" style="background-image: url(../images/book7.jpg);"></a>
+            <a href="#" class="product-cell" style="background-image: url(../images/book13.jpg);"></a>
+            <a href="#" class="product-cell" style="background-image: url(../images/book15.jpg);"></a>
+            <a href="#" class="product-cell" style="background-image: url(../images/book9.jpg);"></a>
+            <a href="#" class="product-cell" style="background-image: url(../images/book10.jpg);"></a>
+            <a href="#" class="product-cell" style="background-image: url(../images/book16.jpg);"></a>
+        </div>
+    </main>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
